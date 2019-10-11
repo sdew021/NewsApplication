@@ -1,13 +1,1066 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>NewsApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Pointblank News</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <meta property="fb:pages" content="707112926111850" />
+      <link href="https://pointblank.news/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://pointblank.news/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://pointblank.news/css/style.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="https://pointblank.news/uploads/dc7fa58cc52f195a9a2661bb69361179d8499b26.png"/>
+      <meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Pointblank News" />
+<meta property="og:description" content="Short News Content - Easy to Read - Highlighted News" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="pointblank" />
+<meta property="og:image" content="https://pointblank.news/uploads/f845ddb4aaf6312dc95da6e0d5309df915ab2f17.png" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="Short News Content - Easy to Read - Highlighted News"/>
+<meta name="twitter:title" content="Pointblank News"/>
+<meta name="twitter:image:src" content="https://pointblank.news/uploads/f845ddb4aaf6312dc95da6e0d5309df915ab2f17.png"/>    
+      
+            <style type="text/css">
+         .newbt{    
+         background: none;}
+         .newbt img{
+         width: 44px!important;
+         }
+         .modal-backdrop{z-index: 11;}
+         .signup{
+         background: #fd5f6d!important;
+         }
+         .navbar-form input{
+         border: solid 1px #80808054!important;
+         padding: 6px;
+         text-align: left;
+         }
+         /* .modal-body input {
+         margin-bottom: 10px;
+         width:49%;
+         } */
+         .modal-body input {
+         margin-bottom: 10px;
+         width: 60%;
+         margin-left: 20px;
+         border-radius: 4px;
+         }
+         .or{
+         font-weight: bold;
+         font-size: 17px;
+         text-transform: uppercase;
+         margin-left: 10px;
+         }
+         .navbar-form .btn{
+         font-size: 14px;
+         }
+         .modal-content{
+         overflow: hidden;
+         margin-top: 145px;
+         padding-bottom:20px;
+         }
+         .btn-info{
+         background: #fe6268;
+         }
+         .username{
+         margin-bottom: 10px;
+         text-align: center;
+         }
+         .password,.email1{
+         text-align: center;
+         }
+         .sub{
+         text-align: center;
+         margin-bottom: 10px;
+         /*margin-top: 30px;*/
+         }
+         .sub1{
+         background: #48be82;color: white;
+         padding: 10px;
+         font-size: 16px;
+         text-transform: uppercase;
+         margin-left: 12px;
+         border-radius: 10px;
+         }
+         .modal-header{
+         background: #5bc0de;
+         }
+         .facebook .fa-facebook{
+         background:#405499;
+         padding: 10px;
+         color: white;
+         }
+         .fa-google{
+         background:#f14336;
+         padding: 10px;
+         color: white;
+         }
+         .facebook{
+         text-align: center;
+         margin-top: 30px;
+         float: right;
+         margin-bottom: 20px;
+         text-transform: uppercase;
+         }
+         .google{
+         text-align: center;
+         margin-top: 30px;
+         float: left;
+         margin-bottom: 20px;
+         text-transform: uppercase;
+         }
+         .face1{float: }
+         .signup{
+         border: none;
+         padding: 6px;
+         background: #48be82;
+         margin-top: 15px;
+         color: white;
+         text-transform: uppercase;
+         }
+         .signout{
+         border: none;
+         padding: 6px;
+         background: #fd5f60;
+         margin-top: 15px;
+         color: white;
+         text-transform: uppercase;
+         }
+         .modal-header{text-align: center;background:#fe6268;color: white; }
+         .modal-title{
+         text-transform: uppercase;
+         color: white;
+         }
+         .close{opacity: 1;color: white;}
+         /*.email1{margin-left: 30px;}*/
+         label{
+         color: #fe6268;
+         margin-top: 5px;
+         }
+         .change-pass label,.signup-form label {
+         width:25%;
+         }
+         .changpwd{text-align: center;}
+         .signout{Confirm
+         floConfirm
+         margiConfirm
+         margiConfirm
+         }
+         .update{
+         float: Confirm
+         margin-Confirm
+         }
+         .update {Confirm
+         floatConfirm
+         margin-top: 25px;
+         border: none;
+         padding: 6px;
+         background: #fd5f6d;
+         margin-top: 15px;
+         color: white;
+         text-transform: uppercase;
+         }
+         .fac,.goo{text-transform: uppercase;}
+         .reg{font-weight: bold;margin-right: 10px;font-size: 17px;margin-right: 65px;}
+         .nopad {
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+         }
+         /*image gallery*/
+         .image-checkbox {
+         cursor: pointer;
+         box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+         border: 4px solid transparent;
+         margin-bottom: 0;
+         outline: 0;
+         }
+         .image-checkbox input[type="checkbox"] {
+         display: none;
+         }
+         .image-checkbox-checked {
+         border-color: #4783B0;
+         }
+         .image-checkbox .fa {
+         position: absolute;
+         color: #4A79A3;
+         background-color: #fff;
+         padding: 10px;
+         top: 0;
+         right: 0;
+         }
+         .testss{
+         margin-top:100px;
+         }
+         label.image-checkbox img {
+         min-height: 87px;
+         object-fit: cover;
+         }
+         .image-checkbox-checked .fa {
+         display: block !important;
+         }
+         .has-search .form-control {
+         padding-left: 2.375rem;
+         position:relative;
+         }
+         .has-search .form-control-feedback {
+         position: absolute;
+         z-index: 2;
+         display: block;
+         width: 2.375rem;
+         height: 2.375rem;
+         line-height: 2.375rem;
+         text-align: center;
+         pointer-events: none;
+         color: #5a5350;
+         left:0;
+         top:4px;
+         }
+         .form-group.has-search {
+         position: relative;
+         }
+         .error-msg{
+         position:absolute;
+         top:295px;
+         left:400px;
+         z-index:10000;
+         }
+         input#login {
+         width: auto;
+         }
+         .validation {
+         margin-left: 66px;
+         }
+         button.search {
+         background-color: #e8f0fe;
+         padding-top: 20px;
+         padding-bottom: 11px;
+         padding-right: 15px;
+         padding-left: 15px;
+         border-style: none;
+         border: 1px solid #c1cada;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrapper">
+      <div class="header">
+         <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                  <span class="hamb-top"></span>
+                  <span class="hamb-middle"></span>
+                  <span class="hamb-bottom"></span>
+                  </button>
+                  <a class="navbar-brand" href="https://pointblank.news?ref=nav">
+                  <img class="logo" src="https://icon-library.net/images/newspaper-app-icon/newspaper-app-icon-14.jpg">
+                  </a>
+                  <div id="error_message" style='
+                     color: red;
+                     margin-bottom: 20px;
+                     margin-top: 3px;
+                     margin-left: 40px;
+                     font-size: 17px;
+                     display: block;
+                     display: none;
+                     background: #f75d6c;
+                     color: #fff;
+                     border-radius: 8px;
+                     padding: 2px;
+                     top: 20px;
+                     padding-left: 20px;
+                     padding-right: 20px;
+                     text-align: center;
+                     padding-bottom: 6px;
+                     ' class="ajax_response error-msg"></div>
+                  <div id="error_message1" style='color: red;
+                     margin-bottom: 20px;
+                     margin-top: 3px;
+                     margin-left: 40px;
+                     font-size: 17px;
+                     display: block;
+                     display: none;
+                     background: #f75d6c;
+                     color: #fff;
+                     border-radius: 8px;
+                     padding: 2px;
+                     top: 20px;
+                     padding-left: 20px;
+                     padding-right: 20px;
+                     text-align: center;
+                     padding-bottom: 6px;' class="ajax_response error-msg"></div>
+                  <div id="error_message2" style='color: red;
+                     margin-bottom: 20px;
+                     margin-top: 3px;
+                     margin-left: 40px;
+                     font-size: 17px;
+                     display: block;
+                     display: none;
+                     background: #f75d6c;
+                     color: #fff;
+                     border-radius: 8px;
+                     padding: 2px;
+                     top: 20px;
+                     padding-left: 20px;
+                     padding-right: 20px;
+                     text-align: center;
+                     padding-bottom: 6px;' class="ajax_response error-msg"></div>
+                  <div id="success_message" style="border: 2px dashed green;margin-top: 10px;background: green;color: rgb(255, 255, 255);display: none;border-radius: 8px;padding: 5px;width: 417px;text-align: center;margin-left: 331px;margin-top: 17px;font-weight: 600;padding-top: 7px;padding-bottom: 7px;"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                     <!-- <li class="active"><a href="#">About</a></li>                -->
+                  </ul>
+                  <div class="navbar-form navbar-right">
+                                          <div class="form-group has-search">
+                        <button class="search"> <span class="fa fa-search form-control-feedback"></span></button>
+                        <input type="text" class="form-control" placeholder="Search" id="search" autocomplete="off">
+                     </div>
+                     <button type="button" class="btn btn-info btn-lg login profileclass" data-toggle="modal" data-target="#myModal" data-backdrop="static">Login</button>
+                     <button type="button" class="btn btn-info btn-lg sign1 profileclass" data-toggle="modal" data-target="#myModal1" data-backdrop="static" >Signup</button>
+                       
+                                          <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                           <!-- Modal content-->
+                           <div class="modal-content">
+                              <form id="loginform">
+                                 <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title text-center">Login</h4>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="row">
+                                       <div class="username">
+                                          <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                             <label>Username:</label>
+                                          </div>
+                                          <div class="col-xs-7" style="text-align: left;">
+                                             <input type="text" placeholder="example@demo.com" name="email" id="email" class="username reg">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="password">
+                                          <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                             <label >Password:</label>
+                                          </div>
+                                          <div class="col-xs-7" style="text-align: left;">
+                                             <input type="password" placeholder="password" name="password" id="password" class="password reg">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="sub">
+                                       <p class="reg">
+                                          Already registered?<input class="sub1" id="login" type="button" value="login" name="submit"/><span class="or">or</span> 
+                                          <button type="button" class=" btn-info btn-lg sub1 signup" data-toggle="modal" data-target="#myModal1"data-backdrop="static" data-dismiss="modal" style="background: #fd5f6d!important;">Signup</button>
+                                          <!--  <input class="" id="login" type="button" value="signup" name="submit"/> --> 
+                                       </p>
+                                    </div>
+                                   <a class="btn btn-link" href="https://pointblank.news/user/password/email">
+
+                                    Forgot Passsword?
+                                    </a> 
+                                    
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- The Modal -->
+                     <div class="modal" id="myModalp">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                 <h4 class="modal-title">Retrive your password</h4>
+                                 <button type="button" class="close f-close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                 <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                                 <div class="col-md-4">
+                                    <input id="email" type="email" class="form-control" name="email" value="">
+                                    <div class="form-control-line"></div>
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                 <button type="submit" class="btn btn-primary">
+                                 Send Password Reset Link
+                                 </button>
+                              </div>
+                           </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="modal fade" id="myModal1" role="dialog">
+                        <div class="modal-dialog">
+                           <!-- Modal content-->
+                           <div class="modal-content signup-form">
+                              <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                 <h4 class="modal-title">Signup</h4>
+                              </div>
+                              <div class="modal-body">
+                                 <div class="row">
+                                    <div class="username">
+                                       <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                          <label>Username:</label>
+                                       </div>
+                                       <div class="col-xs-7" style="text-align: left;">
+                                          <input type="text" placeholder="Username" name="name" id="name" class="username reg">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="username">
+                                       <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                          <label>Email:</label>
+                                       </div>
+                                       <div class="col-xs-7" style="text-align: left;">
+                                          <input type="text" placeholder="Email" name="email" id="reg_email" class="email reg">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="username">
+                                       <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                          <label>Password:</label>
+                                       </div>
+                                       <div class="col-xs-7" style="text-align: left;">
+                                          <input type="password" placeholder="password" name="password" id="reg_password" class="password reg"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="username">
+                                       <div class="col-xs-5" style="text-align: right;padding: 0;">
+                                          <label>Confirm Password:</label>
+                                       </div>
+                                       <div class="col-xs-7" style="text-align: left;">
+                                          <input type="password" placeholder="Confirm password" name="confirm_password" id="reg_confirm_password" class="password reg"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="sub">
+                                    <button style="border-radius: 10px;" class="signup" id="register" data-target="#myModal1"data-backdrop="static">signup</button>    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     </div>
+                     <ul class="nav navbar-nav navbar-right">
+                                                                        <li class="app-icon"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.pointblank.news"><img src="https://pointblank.news/img/playstore.png"></a></li>
+                                             </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+               </div>
+               <!-- /.container-fluid -->
+         </nav>
+         </div>
+         <div class="page-content">
+            <div class="overlay" id="overlayer" data-toggle="offcanvas"></div>
+            <style type="text/css">.newcat{
+     background: #fe6268;
+    color: white;
+    padding: 10px;
+}
+.app-sect li{
+    width:40%;
+
+}
+.app-sect img{
+    max-width:100px;
+}
+</style>
+<!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <!-- <a href="#">
+                       <span class="hidden-xs">Categories</span><span class="visible-xs">Menu</span>
+                    </a> -->
+                </li>
+
+                <li class="visible-xs">
+                    <form class="sidenav-search" method="GET" action="https://pointblank.news">
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="q" value="" class="form-control" placeholder="Search News...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                          </span>
+                        </div><!-- /input-group -->
+                      </form>
+                </li>
+                <h4 class="newcat"> Categories </h4>
+
+                <li>
+                    <a href="https://pointblank.news" >
+                         <span class="img">
+                        <i class="fa fa-list"></i>
+                        </span>
+                        <span class="nav-text">All News</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pointblank.news/category/trending?slug=trending" >
+                         <span class="img">
+                        <i class="fa fa-line-chart"></i>
+                        </span>
+                        <span class="nav-text">Trending</span>
+                    </a>
+                </li>
+
+                          
+                <h4 class="newcat"> Suggested Topics </h4>
+                                    <li id="category_1">
+                        <a href="https://pointblank.news/category/Sports?id=MQ==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/7dbf0b3832c94f4caf918fd77d4326420859f535.png "></span>
+                            <span class="nav-text">
+                                Sports
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_2">
+                        <a href="https://pointblank.news/category/India?id=Mg==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/4728e84a8c2400fd060609632680f09c87d2452d.png "></span>
+                            <span class="nav-text">
+                                India
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_3">
+                        <a href="https://pointblank.news/category/Fashion?id=Mw==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/f38cb19eac35e21996373dc612127ef3116330ee.png "></span>
+                            <span class="nav-text">
+                                Fashion
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_4">
+                        <a href="https://pointblank.news/category/Technology?id=NA==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/68d96e43cc391a551331c4b953fe6400dbcb42f3.png "></span>
+                            <span class="nav-text">
+                                Technology
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_5">
+                        <a href="https://pointblank.news/category/Politics?id=NQ==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/1113ad342038065d0d06092c042389a5703d1ed5.png "></span>
+                            <span class="nav-text">
+                                Politics
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_6">
+                        <a href="https://pointblank.news/category/Business?id=Ng==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/2cfb9500ffdcd769b0252121c45ae8348759e85f.png "></span>
+                            <span class="nav-text">
+                                Business
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_8">
+                        <a href="https://pointblank.news/category/Entertainment?id=OA==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/4a6be1c96af406fd19d7ad87bc4ce1b21308f6fb.png "></span>
+                            <span class="nav-text">
+                                Entertainment
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_9">
+                        <a href="https://pointblank.news/category/Automobile?id=OQ==" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/094db2398826656ded573d5a299cf174c562493a.png "></span>
+                            <span class="nav-text">
+                                Automobile
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_10">
+                        <a href="https://pointblank.news/category/Travel?id=MTA=" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/20e1a2cd5bc39a684110fe8ae47042f0a00993d6.png "></span>
+                            <span class="nav-text">
+                                Travel
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_11">
+                        <a href="https://pointblank.news/category/Education?id=MTE=" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/42d382b6ba4f0fc8176891d6469ea080a50ac1d7.png "></span>
+                            <span class="nav-text">
+                                Education
+                            </span>
+                        </a>                      
+                    </li>              
+                                    <li id="category_14">
+                        <a href="https://pointblank.news/category/Cricket?id=MTQ=" >
+                            <span class="img"><img src=" https://pointblank.news/uploads/3eb746240e4a5221a3617cca718fdce278d4a0a4.png "></span>
+                            <span class="nav-text">
+                                Cricket
+                            </span>
+                        </a>                      
+                    </li>              
+                 
+                <h4 class="newcat"> Download the Apps </h4>
+                <div class="app-sect">
+                <li>
+                <a href="#"><img src="https://pointblank.news/img/appstore.png"></a>
+                </li>
+                <li>
+                <a href="#"><img src="https://pointblank.news/img/playstore.png"></a>
+                </li>
+                </div>
+                <!--               -->
+                
+                <li class="sidebar-app-icon visible-xs">
+                
+                </li>
+                                    <li class="sidebar-app-icon visible-xs"><a href="https://play.google.com/store/apps/details?id=com.pointblank.news" target="_blank"><img src="https://pointblank.news/img/playstore.png"></a></li>
+                               
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->            
+        <div class="news-container" >
+        <div class="news-feed" id="content">
+        <!-- posts goes here -->
+        </div>
+</div>
+         </div>
+      </div>
+      <script src="https://pointblank.news/js/jquery.min.js"></script>
+      <script src="https://pointblank.news/js/voice.min.js"></script>
+      <script src="https://pointblank.news/js/bootstrap.min.js"></script>
+      <script src="https://pointblank.news/js/scripts.js"></script>
+      <script>
+         $(document).ready(function(){
+          var show_btn=$('.signup');
+         var close_btn=$('.close');
+         
+          //$("#testmodal").modal('show');
+          
+            show_btn.click(function(){
+              $(".validation").remove();
+               $("#myModal1").css("display","block");
+             $("#myModal").css("display","none");
+          })
+                close_btn.click(function(){
+                  $('.reg').val('');
+               $(".modal-backdrop.in").css("opacity","0");
+          })
+         });
+            $(document).on('click', '.profileclass', function(event) {
+                  $(".validation").remove();
+              });
+         
+              $("#password").keyup(function(event) {
+                  if (event.keyCode === 13) {
+                      $("#login").click();
+                  }
+              });
+         
+              $("#reg_confirm_password").keyup(function(event) {
+                  if (event.keyCode === 13) {
+                      $("#register").click();
+                  }
+              });
+              $("#upd_email").keyup(function(event) {
+                  if (event.keyCode === 13) {
+                      $("#update").click();
+                  }
+              });
+              $("#change_confirm_password").keyup(function(event) {
+                  if (event.keyCode === 13) {
+                      $("#passwordUpdate").click();
+                  }
+              });
+              $("#search").keyup(function(event) {
+                  if (event.keyCode === 13) {
+                      $(".search").click();
+                  }
+              });
+            
+         
+            $(document).on('click', '#login', function(event) {
+              $("#email").parent().next(".validation").remove();
+              $("#password").parent().next(".validation").remove();
+         
+         
+              event.preventDefault();
+              var focusSet = false;
+            if (!$('#email').val()) {
+                if ($("#email").parent().next(".validation").length == 0)
+                {
+                    $("#email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left: 165px;'>Please enter email address</div>");
+                }
+                $('#email').focus();
+                focusSet = true;
+            }
+            if (!$('#password').val()) {
+                if ($("#password").parent().next(".validation").length == 0)
+                {
+                    $("#password").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left: 192px;'>Please enter password address</div>");
+                }
+                $('#password').focus();
+                focusSet = true;
+            } 
+            if($('#email').val()!='' && $('#password').val()!='') {
+                    $.ajax({
+                    url:"https://pointblank.news/login",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                     email: $("#email").val(),
+                     password: $("#password").val(),
+                     },
+                    success: function(response, textStatus, xhr) {
+                    $(".modal").modal("hide");
+                    location.reload();
+                    },
+                    error: function(response, textStatus, xhr) {
+                      if(typeof(response.responseJSON.errors.email) != "undefined" && response.responseJSON.errors.email !== null){
+                        $('#error_message').fadeIn().html(response.responseJSON.errors.email[0]);
+                      setTimeout(function() {
+                        $('#error_message').fadeOut("slow");
+                      }, 2000 );
+                      }
+                    }
+         
+                });
+            }
+            });
+         
+            $(document).on('click', '#update', function(event) {
+              $("#upd_email").parent().next(".validation").remove();
+              $("#upd_name").parent().next(".validation").remove();
+         
+         
+              event.preventDefault();
+              var focusSet = false;
+            if (!$('#upd_email').val()) {
+                if ($("#upd_email").parent().next(".validation").length == 0)
+                {
+                    $("#upd_email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left: 107px;'>Please enter email address</div>");
+                }
+                $('#upd_email').focus();
+                focusSet = true;
+            }
+            if (!$('#upd_name').val()) {
+                if ($("#upd_name").parent().next(".validation").length == 0)
+                {
+                    $("#upd_name").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left:100px;'>Please enter name</div>");
+                }
+                $('#upd_name').focus();
+                focusSet = true;
+            } 
+            if($('#upd_email').val()!='' && $('#upd_name').val()!='') {
+                    $.ajax({
+                    url:"https://pointblank.news/profile",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                     email: $("#upd_email").val(),
+                     name: $("#upd_name").val(),
+                     },
+                    success: function(response, textStatus, xhr) {
+                    $("#myModal2").modal("hide");
+                    $('#success_message').fadeIn().html(response.message);
+                      setTimeout(function() {
+                        $('#success_message').fadeOut("slow");
+                      }, 2000 );
+                    // location.reload();
+                    },
+                    error: function(response, textStatus, xhr) {
+                      $('#error_message').fadeIn().html(response.responseJSON.error);
+                      setTimeout(function() {
+                        $('#error_message').fadeOut("slow");
+                      }, 2000 );
+                    }
+         
+                });
+            }
+            });
+         
+         
+            $(document).on('click', '#passwordUpdate', function(event) {
+                event.preventDefault();
+                $("#new-pass").parent().next(".validation").remove();
+              $("#old-pass").parent().next(".validation").remove();
+              var focusSet = false;
+            if (!$('#new-pass').val()) {
+                if ($("#new-pass").parent().next(".validation").length == 0)
+                {
+                    $("#new-pass").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter new password</div>");
+                }
+                $('#new-pass').focus();
+                focusSet = true;
+            }
+            if (!$('#old-pass').val()) {
+                if ($("#old-pass").parent().next(".validation").length == 0)
+                {
+                    $("#old-pass").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter old password</div>");
+                }
+                $('#old-pass').focus();
+                focusSet = true;
+            } 
+            if($('#new-pass').val()!='' && $('#old-pass').val()!='') {
+                    $.ajax({
+                    url:"https://pointblank.news/changepassword",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                     password: $("#new-pass").val(),
+                     old_password: $("#old-pass").val(),
+                     password_confirmation: $("#change_confirm_password").val(),
+                     },
+                    success: function(response, textStatus, xhr) {
+                    $("#myModal2").modal("hide");
+                    location.reload();
+                    },
+                    error: function(response, textStatus, xhr) {
+                  
+                      $('#error_message2').fadeIn().html(response.responseJSON.error);
+                      setTimeout(function() {
+                        $('#error_message2').fadeOut("slow");
+                      }, 2000 );
+                       
+                    }
+         
+                });
+            }
+            });
+         
+            $(document).on('click', '#register', function(event) {
+              event.preventDefault();
+                $("#name").parent().next(".validation").remove();
+              $("#reg_email").parent().next(".validation").remove();
+              $("#reg_password").parent().next(".validation").remove();
+              $("#reg_email").parent().next(".validation").remove();
+              var focusSet = false;
+            if (!$('#name').val()) {
+                if ($("#name").parent().next(".validation").length == 0)
+                {
+                    $("#name").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left:105px;'>Please enter name</div>");
+                }
+                $('#name').focus();
+                focusSet = true;
+            }
+            if (!$('#reg_email').val()) {
+                if ($("#reg_email").parent().next(".validation").length == 0)
+                {
+                    $("#reg_email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left:105px;'>Please enter email</div>");
+                }
+                $('#reg_email').focus();
+                focusSet = true;
+            } 
+            if (!$('#reg_password').val()) {
+                if ($("#reg_password").parent().next(".validation").length == 0)
+                {
+                    $("#reg_password").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-left:100px;margin-left:130px;'>Please enter password</div>");
+                }
+                $('#reg_password').focus();
+                focusSet = true;
+            } 
+            if (!$('#reg_confirm_password').val()) {
+                if ($("#reg_confirm_password").parent().next(".validation").length == 0)
+                {
+                    $("#reg_confirm_password").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;margin-right:60px;'>Please enter confirm password</div>");
+                }
+                $('#reg_confirm_password').focus();
+                focusSet = true;
+            } 
+            if($('#name').val()!='' && $('#reg_email').val()!='' && $('#reg_password').val()!='' && $('#reg_confirm_password').val()!='') {
+                    $.ajax({
+                    url:"https://pointblank.news/register",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                      name: $("#name").val(),
+                     email: $("#reg_email").val(),
+                     password: $("#reg_password").val(),
+                     password_confirmation: $("#reg_confirm_password").val(),
+         
+                     },
+                    success: function(response, textStatus, xhr) {
+                    $(".modal").modal("hide");
+                    location.reload();
+                    },
+                    error: function(response, textStatus, xhr) {
+                      if(typeof(response.responseJSON.errors.email) != "undefined" && response.responseJSON.errors.email !== null){
+                        $('#error_message1').fadeIn().html(response.responseJSON.errors.email[0]);
+                      setTimeout(function() {
+                        $('#error_message1').fadeOut("slow");
+                      }, 2000 );
+                      }
+                      if(typeof(response.responseJSON.errors.password) != "undefined" && response.responseJSON.errors.password !== null){
+                        $('#error_message1').fadeIn().html(response.responseJSON.errors.password[0]);
+                      setTimeout(function() {
+                        $('#error_message1').fadeOut("slow");
+                      }, 2000 );
+                      }
+                    }
+         
+                });
+            }
+            });
+           
+         
+            function like(postId,status,likes) {
+              var likesTotal =0;
+                event.preventDefault();
+                    $.ajax({
+                    url:"https://pointblank.news/like",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                      post_id: postId,
+                      status: status,
+                     },
+                    success: function(response, textStatus, xhr) {
+                      if(status == 1){
+                         likesTotal = parseInt(likes) + parseInt(1);
+                        $('#likes_'+postId+'').empty().append(likesTotal);
+                        $('#likeBtn_'+postId+'').empty().append(`<a target="_blank" onclick="like(`+postId+`,0,`+likesTotal+`)"><i class="fa fa-heart" style="color:red"></i></a>`);
+                        }else{
+                          likesTotal = parseInt(likes) - parseInt(1);
+                        $('#likes_'+postId+'').empty().append(likesTotal);
+                          $('#likeBtn_'+postId+'').empty().append(`<a target="_blank" onclick="like(`+postId+`,1,`+likesTotal+`)"><i class="fa fa-heart-o"></i></a>`);
+                        }
+                    },
+                    error: function(response, textStatus, xhr) {
+                      $('#error_message').fadeIn().html(response.responseJSON.error);
+                      setTimeout(function() {
+                        $('#error_message').fadeOut("slow");
+                      }, 2000 );
+                        $('#myModal').modal('show');
+                    }
+         
+                });
+            }
+         
+            function bookmark(postId,status) {
+                event.preventDefault();
+                    $.ajax({
+                    url:"https://pointblank.news/bookmark",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                      post_id: postId,
+                      status: status,
+                     },
+                    success: function(response, textStatus, xhr) {
+                      if(status == 1){
+                          $('#bookmarkBtn_'+postId+'').empty().append(`<a target="_blank" onclick="bookmark(`+postId+`,0)"><i class="fa fa-bookmark" style="color:#121011"></i></a>`);
+                        }else{
+                          $('#bookmarkBtn_'+postId+'').empty().append(`<a target="_blank" onclick="bookmark(`+postId+`,1)"><i class="fa fa-bookmark-o"></i></a>`);
+                        }
+                    },
+                    error: function(response, textStatus, xhr) {
+                      $('#myModal').modal('show');
+                      $('#error_message').fadeIn().html(response.responseJSON.error);
+                      setTimeout(function() {
+                        $('#error_message').fadeOut("slow");
+                      }, 2000 );
+                    }
+         
+                });
+            }
+         
+            function interestCategory(categoryId,status) {
+                event.preventDefault();
+                    $.ajax({
+                    url:"https://pointblank.news/interestCategory",
+                    type: 'POST',
+                    data: { 
+                      _token: 'PXmZFZnvmYnAK3VWU34Zu5tUGO7O3uiBfvEwSCvq',
+                      category_id: categoryId,
+                      status: status,
+                     },
+                    success: function(response, textStatus, xhr) {
+                      // if(status == 1){
+                      //     $('#bookmarkBtn_'+postId+'').empty().append(`<a target="_blank" onclick="bookmark(`+postId+`,0)"><i class="fa fa-bookmark" style="color:#121011"></i></a>`);
+                      //   }else{
+                      //     $('#bookmarkBtn_'+postId+'').empty().append(`<a target="_blank" onclick="bookmark(`+postId+`,1)"><i class="fa fa-bookmark-o"></i></a>`);
+                      //   }
+                    },
+                    error: function(response, textStatus, xhr) {
+                      $('#myModal').modal('show');
+                      $('#error_message').fadeIn().html(response.responseJSON.error);
+                      setTimeout(function() {
+                        $('#error_message').fadeOut("slow");
+                      }, 2000 );
+                    }
+         
+                });
+         
+            }
+            $(document).on('click', '.search', function(event) {
+                   var searchData = $("#search").val();
+                  //  if(searchData.length >=3){
+                   var url="https://pointblank.news/category/search?q="+searchData+"";
+                   window.location = url;
+                  //  }
+            });
+           
+            
+      </script>
+      <script>
+         // image gallery
+         // init the state from the input
+         $(".image-checkbox").each(function () {
+         if ($(this).find('input[type="checkbox"]').first().attr("checked")) {
+         $(this).addClass('image-checkbox-checked');
+         }
+         else {
+         $(this).removeClass('image-checkbox-checked');
+         }
+         });
+         
+         // sync the state to the input
+         $(".image-checkbox").on("click", function (e) {
+         $(this).toggleClass('image-checkbox-checked');
+         var $checkbox = $(this).find('input[type="checkbox"]');
+         $checkbox.prop("checked",!$checkbox.prop("checked"))
+         
+         e.preventDefault();
+         });
+      </script>
+      <script type="text/javascript" src="https://pointblank.news/js/loader.js"></script>
+<script type="text/javascript">
+    var q = "";
+    var type = "";
+        
+    
+    $(document).ready(function() {
+
+        $("#category_"+type).addClass('active');
+
+        $('#content').scrollPagination({
+
+            nop     : 6, 
+            offset  : 0, 
+            error   : 'No More News!', 
+            delay   : 500, 
+            scroll  : true, 
+            path    : "https://pointblank.news/load/post",
+            q       : q,
+            type    : type
+        });
+        
+    });
+
+</script>
+   </body>
 </html>
