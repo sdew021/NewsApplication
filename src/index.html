@@ -462,8 +462,11 @@
                       
                      </div>
                      <ul class="nav navbar-nav navbar-right">
-                                                                        <li class="app-icon"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.pointblank.news"><img src="https://pointblank.news/img/playstore.png"></a></li>
-                                             </ul>
+                        <li class="app-icon" >
+                          <br>
+                          <p id="clock" style="background-color:#f75d6c;font-size: 25px;font-weight: bold;color: white;padding-left: 8px;padding-right: 8px;border-radius: 7px"></p >
+                        </li>
+                    </ul>
                   </div>
                   <!-- /.navbar-collapse -->
                </div>
@@ -977,7 +980,20 @@
          
                 });
             }
-         
+            (function () {
+
+            var clockElement = document.getElementById( "clock" );
+
+            function updateClock ( clock ) {
+            clock.innerHTML = new Date().toLocaleTimeString();
+            }
+
+            setInterval(function () {
+             updateClock( clockElement );
+            }, 1000);
+
+            }());
+
             function interestCategory(categoryId,status) {
                 event.preventDefault();
                     $.ajax({
