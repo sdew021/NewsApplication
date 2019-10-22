@@ -1,2 +1,2 @@
 # NewsApplication
-A basic new portal using AngularJs and MySql.
+A basic news portal using AngularJs and MySql.
