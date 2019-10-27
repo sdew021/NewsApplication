@@ -6,6 +6,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="app-icon" >
+                          
+                          <p id="clock" style="font-size: 25px;font-weight: bold;color: white;padding-left: 8px;padding-right: 8px;border-radius: 7px"></p >
+                        </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.php">About</a>
             </li>
@@ -21,3 +25,15 @@
         </div>
       </div>
     </nav>
+    <script type="text/javascript">
+      (function () {
+            var clockElement = document.getElementById( "clock" );
+            function updateClock ( clock ) {
+            clock.innerHTML = new Date().toLocaleTimeString();
+            }
+            setInterval(function () {
+             updateClock( clockElement );
+            }, 1000);
+            }());
+
+    </script>
