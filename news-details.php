@@ -106,7 +106,7 @@ $pt=$row['postdetails'];
       </div>
       <!-- /.row -->
 <!---Comment Section --->
-
+<!---
  <div class="row" style="margin-top: -8%">
    <div class="col-md-8">
 <div class="card my-4">
@@ -130,7 +130,7 @@ $pt=$row['postdetails'];
               </form>
             </div>
           </div>
-
+--->
   <!---Comment Display Section --->
 
  <?php 
