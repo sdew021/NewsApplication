@@ -48,6 +48,26 @@ INSERT INTO `tbladmin` (`id`, `AdminUserName`, `AdminPassword`, `AdminEmailId`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tblsub`
+--
+
+CREATE TABLE `tblsub` (
+  `Name` varchar(255) NOT NULL,
+  `EmailId` varchar(255) NOT NULL,
+  `Address` varchar(255) NOT NULL,
+  `Phone` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbladmin`
+--
+
+INSERT INTO `tblsub` ( `Name`,`EmailId`,`Address`,`Phone`) VALUES
+('Saurabh Dewangan','saurabh@test.com','NITK Surathkal','01234567890');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tblcategory`
 --
 
