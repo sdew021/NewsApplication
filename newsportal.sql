@@ -132,7 +132,7 @@ CREATE TABLE `tblposts` (
   `SubCategoryId` int(11) DEFAULT NULL,
   `PostDetails` longtext CHARACTER SET utf8,
   `PostingDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `UpdationDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `Is_Active` int(1) DEFAULT NULL,
   `PostUrl` mediumtext,
   `PostImage` varchar(255) DEFAULT NULL

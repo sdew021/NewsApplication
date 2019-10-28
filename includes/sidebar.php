@@ -45,7 +45,7 @@ while($row=mysqli_fetch_array($query))
             <div class="card-body">
                       <ul class="mb-0">
 <?php
-$query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId limit 8");
+$query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as posttitle from tblposts left join tblcategory on tblcategory.id=tblposts.CategoryId left join  tblsubcategory on  tblsubcategory.SubCategoryId=tblposts.SubCategoryId order by tblposts.UpdationDate desc limit 8");
 while ($row=mysqli_fetch_array($query)) {
 
 ?>
