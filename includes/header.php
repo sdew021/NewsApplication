@@ -6,21 +6,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="app-icon" >
-                          
-                          <p id="clock" style="font-size: 25px;font-weight: bold;color: white;padding-left: 8px;padding-right: 8px;border-radius: 7px"></p >
+            <li class="nav-link" >
+                          <a id="clock" style="font-size: 25px;font-weight: bold;background: #545454;color: white;padding-left: 8px;padding-right: 8px;border-radius: 7px"></a>
                         </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.php">About</a>
+            <li class="nav-link">
+              <a href="about-us.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">About</a>
             </li>
-                 <li class="nav-item">
-              <a class="nav-link" href="index.php">News</a>
+            <li class="nav-link">
+              <a href="index.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">News</a>
             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="contact-us.php">Contact us</a>
+            <li class="nav-link">
+              <a href="contact-us.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">Contact Us</a>
             </li>
-  
-  
           </ul>
         </div>
       </div>
