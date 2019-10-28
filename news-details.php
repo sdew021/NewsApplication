@@ -132,7 +132,7 @@ $pt=$row['postdetails'];
           </div>
 --->
   <!---Comment Display Section --->
-
+<!---
  <?php 
  $sts=1;
  $query=mysqli_query($con,"select name,comment,postingDate from  tblcomments where postId='$pid' and status='$sts'");
@@ -152,6 +152,7 @@ while ($row=mysqli_fetch_array($query)) {
         </div>
       </div>
     </div>
+    --->
 
   
       <?php include('includes/footer.php');?>
