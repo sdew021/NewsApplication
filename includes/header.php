@@ -13,7 +13,7 @@
               <a href="about-us.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">About</a>
             </li>
             <li class="nav-link">
-              <a href="subscribe.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">Subscribe</a>
+              <a href="subscribers.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">Subscribe</a>
             </li>
             <li class="nav-link">
               <a href="contact-us.php" style="font-size: 25px;background:#545454;color:white;padding-left: 8px;padding-right: 8px;border-radius: 7px">Contact Us</a>
