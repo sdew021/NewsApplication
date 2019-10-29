@@ -41,7 +41,23 @@ include('includes/config.php');
 
                
           <!-- add form for adding subsctibers -->
-      
+          <div class="card my-4">
+          	<h5 class="card-header">Enter your details for offline subscription</h5>
+          	<div class="card-body">
+      		<form>
+  			Name:<br>
+  			<input type="text" name="name" class="form-control" placeholder="Enter your fullname" required><br>
+  			Email ID:<br>
+  			<input type="email" name="email" class="form-control" placeholder="Enter your Valid email" required><br>
+  			Address:<br>
+  			<input type="text" name="address" class="form-control" placeholder="Enter your valid address" required><br>
+  			Phone Number:<br>
+  			<input type="tel" name="phone" class="form-control" pattern="[0-9]{10}" placeholder="Enter your valid 10 digit contact number" required><br><br>
+  			<button type="submit" class="btn btn-primary" name="submit">Submit</button><br>
+			</form>
+		</div>
+			<br>
+		</div>
 
           
 
