@@ -39,6 +39,12 @@ include('includes/config.php');
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
+
+        <!-- Subscriber data post -->
+         
+          
+
+
           <!-- Blog Post -->
 <?php 
      if (isset($_GET['pageno'])) {

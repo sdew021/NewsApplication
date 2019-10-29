@@ -4,6 +4,28 @@ include('includes/config.php');
 
     ?>
 
+
+<?php 
+if(isset($_POST['submit'])){
+
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $address = $_POST['address'];
+  $phno = $_POST['phone'];
+
+  $query=mysqli_query($con,"insert into tblsub(Name,EmailId,Address,Phone) values('$name','$email','$address','$phno')");
+if($query)
+{
+$msg="Subscription Added";
+}
+else{
+$error="Something went wrong . Please try again.";    
+} 
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
