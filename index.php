@@ -21,6 +21,7 @@ include('includes/config.php');
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/newscard.css" rel="stylesheet">
 
   </head>
 
@@ -66,7 +67,7 @@ $query=mysqli_query($con,"select tblposts.id as pid,tblposts.PostTitle as postti
 while ($row=mysqli_fetch_array($query)) {
 ?>
 
-          <div class="card mb-4">
+          <div class="newscard">
  <img class="card-img-top" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>">
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
@@ -78,6 +79,7 @@ while ($row=mysqli_fetch_array($query)) {
               Last Updated: <?php echo htmlentities($row['updationdate']);?>
            
             </div>
+            <br><br>
           </div>
 <?php } ?>
        
